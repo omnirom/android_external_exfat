@@ -11,7 +11,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := main.c
 LOCAL_SHARED_LIBRARIES += libz libc
 LOCAL_STATIC_LIBRARIES += libexfat_mount libexfat_fsck libexfat_mkfs
-LOCAL_STATIC_LIBRARIES += libexfat libfuse
+LOCAL_STATIC_LIBRARIES += libexfat libfuse_static
 include $(BUILD_EXECUTABLE)
 
 SYMLINKS := $(addprefix $(TARGET_OUT)/bin/,$(LINKS))
